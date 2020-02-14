@@ -17,6 +17,10 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { FirstComponent } from './first/first.component';
 import { ListComponent } from './list/list.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { GrandchildComponent } from './grandchild/grandchild.component';
+
 
 
 @NgModule({
@@ -31,6 +35,10 @@ import { ListComponent } from './list/list.component';
     ReactiveFormComponent,
     FirstComponent,
     ListComponent,
+    ParentComponent,
+    ChildComponent,
+    GrandchildComponent,
+   
   ],
   imports: [
     BrowserModule,

@@ -8,7 +8,8 @@ import { AboutComponent } from './about/about.component';
 const ROUTES: Routes=[
   {path:'' ,component: HomeComponent},
   {path:'blog' ,component: BlogComponent},
-  {path:'about' ,component: AboutComponent, loadChildren: ''},
+  {path:'about' ,component: AboutComponent},
+  { path: 'iamlazy', loadChildren: () => import('./iamlazy/iamlazy.module').then(m => m.IamlazyModule) },
 ]
 
 @NgModule({
